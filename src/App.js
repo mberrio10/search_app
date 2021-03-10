@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import Navbar from './components/layout/Navbar';
 import {
   BrowserRouter as router,
@@ -6,7 +7,7 @@ import {
   Router,
   Switch,
 } from 'react-router-dom';
-import React from 'react';
+import Index from './components/layout/Index';
 
 function App() {
   return (
