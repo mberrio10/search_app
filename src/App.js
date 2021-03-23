@@ -20,7 +20,7 @@ class App extends Component {
                 <Route exact path='/' component={Index} />
                 <Route
                   exact
-                  path='/description/repo/:id'
+                  path='/description/owner/:owner/repo/:repo'
                   component={Description}
                 />
               </Switch>

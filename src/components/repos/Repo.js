@@ -25,7 +25,7 @@ const Repo = (props) => {
             : {items.forks_count}
           </p>
           <Link
-            to={`description/repo/${items.id}`}
+            to={`description/owner/${items.owner.login}/repo/${items.name}`}
             className='btn btn-dark btn-block'
           >
             <i className='fas fa-chevron-right'></i> Description
