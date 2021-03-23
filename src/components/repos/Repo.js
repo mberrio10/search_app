@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const Repo = (props) => {
   const { items } = props;
@@ -24,9 +24,12 @@ const Repo = (props) => {
             </strong>
             : {items.forks_count}
           </p>
-            <Link to={`//${}`} className="btn btn-dark btn-block">
-            <i className="fas fa-chevron-right"></i> Description
-            </Link>
+          <Link
+            to={`description/repo/${items.id}`}
+            className='btn btn-dark btn-block'
+          >
+            <i className='fas fa-chevron-right'></i> Description
+          </Link>
         </div>
       </div>
     </div>
