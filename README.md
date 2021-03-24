@@ -1,6 +1,6 @@
 # GitHub Repositorie Search App
 
-This is web app project to search Repositories using the GitHub APIs, you can search any repositorie by Language getting full details about the repositorie using raw markdowns
+This is a web app project made to search Repositories using the GitHub APIs, you can search the most popular repositories by Language getting full details about the repository
 
 ## Available Scripts
 
