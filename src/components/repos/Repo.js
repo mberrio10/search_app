@@ -7,7 +7,7 @@ const Repo = (props) => {
     <div className='col-md-6'>
       <div className='card mb-4 shadow-sm'>
         <div className='card-body'>
-          <h5>{items.name}</h5>
+          <h5>{items.full_name}</h5>
           <p className='card-text'>
             <strong>
               <i className='fas fa-globe'></i> Language

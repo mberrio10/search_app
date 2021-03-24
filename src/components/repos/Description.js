@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import ReactMarkdown from 'react-markdown';
+// import ReactMarkdown from 'react-markdown';
+import ReactMarkdownWithHtml from 'react-markdown/with-html';
 import axios from 'axios';
 import LoadSpinner from '../layout/LoadSpinner';
 
@@ -39,7 +40,10 @@ const Description = () => {
         <div className='row'>
           <div className='col-8'>
             <div className='markdown-section'>
-              <ReactMarkdown>{readme}</ReactMarkdown>
+              {/* <ReactMarkdown>{readme}</ReactMarkdown> */}
+              <ReactMarkdownWithHtml allowDangerousHtml>
+                {readme}
+              </ReactMarkdownWithHtml>
             </div>
           </div>
           <div className='col-4'>
